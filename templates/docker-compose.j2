@@ -18,7 +18,9 @@ services:
     restart: unless-stopped
     networks:
       - wp
-
+    ports:
+      - '80:80'
+      
   wordpress:
     depends_on:
       db:
